@@ -25,28 +25,29 @@
 > cd out/artifacts/DLIOEstimate_jar/
 > java -jar DLIOEstimate.jar
 ```
+* 必須安裝[JRE](https://www.java.com/en/download/windows-64bit.jsp)
+* 執行的第一個參數可以是參數檔案路徑（預設為: `configs.properties`）
 
-	* 必須安裝[JRE](https://www.java.com/en/download/windows-64bit.jsp)
-	* 執行的第一個參數可以是參數檔案路徑（預設為: `configs.properties`）
 6. macOS：開啟終端機，並執行以下命令。<br/>
 ```shell
 $ cd ./out/artifacts/DLIOEstimate_jar/
 $ java -jar DLIOEstimate.jar
 ```
 
-	* 必須安裝 JRE：
-		- 從網站下載：https://www.java.com/zh_TW/download/help/mac_install.xml
-		- 透過 [Homebrew](https://brew.sh/index_zh-tw) 安裝：`$ brew install java`
+* 必須安裝 JRE：
+	- 從網站下載：https://www.java.com/zh_TW/download/help/mac_install.xml
+	- 透過 [Homebrew](https://brew.sh/index_zh-tw) 安裝：`$ brew install java`
+	
 7. Liumx：開啟終端機，並執行以下命令。<br/>
 ```shell
 $ cd ./out/artifacts/DLIOEstimate_jar/
 $ java -jar DLIOEstimate.jar
 ```
 
-	* 必須安裝 JRE：
-		- 從網站下載：https://www.java.com/zh_TW/download/help/linux_x64_install.xml
-		- 透過 Apt-get 安裝：`$ apt-get install java`
-		- 透過 yum 安裝：`$ yum install java`
+* 必須安裝 JRE：
+	- 從網站下載：https://www.java.com/zh_TW/download/help/linux_x64_install.xml
+	- 透過 Apt-get 安裝：`$ apt-get install java`
+	- 透過 yum 安裝：`$ yum install java`
 
 ### 備註
 - 因為現實沒什麼時間，做出這個只花兩天，並沒有精雕細琢，所以 **運算可能有誤** 。
