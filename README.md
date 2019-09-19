@@ -25,6 +25,7 @@
 > cd out/artifacts/DLIOEstimate_jar/
 > java -jar DLIOEstimate.jar
 ```
+
 	* 必須安裝[JRE](https://www.java.com/en/download/windows-64bit.jsp)
 	* 執行的第一個參數可以是參數檔案路徑（預設為: `configs.properties`）
 6. macOS：開啟終端機，並執行以下命令。<br/>
@@ -32,6 +33,7 @@
 $ cd ./out/artifacts/DLIOEstimate_jar/
 $ java -jar DLIOEstimate.jar
 ```
+
 	* 必須安裝 JRE：
 		- 從網站下載：https://www.java.com/zh_TW/download/help/mac_install.xml
 		- 透過 [Homebrew](https://brew.sh/index_zh-tw) 安裝：`$ brew install java`
@@ -40,6 +42,7 @@ $ java -jar DLIOEstimate.jar
 $ cd ./out/artifacts/DLIOEstimate_jar/
 $ java -jar DLIOEstimate.jar
 ```
+
 	* 必須安裝 JRE：
 		- 從網站下載：https://www.java.com/zh_TW/download/help/linux_x64_install.xml
 		- 透過 Apt-get 安裝：`$ apt-get install java`
