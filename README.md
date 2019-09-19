@@ -17,7 +17,7 @@
     - `<ITEM>.needed.<SIZE>`: 指定物品還需要的數量。
     
 2. 在檔案所在位置開啟命令列(`cmd`)，並執行以下命令。(必須安裝[JRE](https://www.java.com/en/download/windows-64bit.jsp))
-    > java -jar helloworld.jar
+    > java -jar DLIOEstimate.jar
     - 執行的第一個參數可以是參數檔案路徑 
         - 預設: `configs.properties`
 
