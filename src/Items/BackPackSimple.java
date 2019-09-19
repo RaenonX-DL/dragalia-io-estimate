@@ -43,7 +43,15 @@ public class BackPackSimple extends BackPackBase {
 
     @Override
     BaseItem getItemViaCode(int code) {
-        return null;
+        if (code == 1) {
+            return coinGold;
+        } else if (code == 2) {
+            return coinSilver;
+        } else if (code == 3) {
+            return coinBronze;
+        } else {
+            throw new IllegalArgumentException(String.format("Code %d doesn't correspond to anything.", code));
+        }
     }
 
     @Override

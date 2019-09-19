@@ -3,7 +3,7 @@ package Items;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class BackPack extends BackPackBase {
+public class BackPackComplete extends BackPackBase {
     private CoinGold coinGold;
     private CoinSilver coinSilver;
     private CoinBronze coinBronze;
@@ -19,7 +19,7 @@ public class BackPack extends BackPackBase {
     private EmblemGold emblemDarkGold;
     private EmblemSilver emblemDarkSilver;
 
-    public BackPack() {
+    public BackPackComplete() {
         this(
                 Integer.parseInt(ItemProps.props.getProperty("coin.current.gold")),
                 Integer.parseInt(ItemProps.props.getProperty("coin.current.silver")),
@@ -37,7 +37,7 @@ public class BackPack extends BackPackBase {
                 new HashMap<>(), 0);
     }
 
-    public BackPack(
+    public BackPackComplete(
             int coinGD, int coinSV, int coinBR,
             int emFireGD, int emFireSV, int emWaterGD, int emWaterSV,
             int emWindGD, int emWindSV, int emLightGD, int enLightSV,
@@ -66,8 +66,8 @@ public class BackPack extends BackPackBase {
     }
 
     @Override
-    public BackPack deepCopy() {
-        return new BackPack(
+    public BackPackComplete deepCopy() {
+        return new BackPackComplete(
                 this.coinGold.getCurrent(), this.coinSilver.getCurrent(), this.coinBronze.getCurrent(),
                 this.emblemFireGold.getCurrent(), this.emblemFireSilver.getCurrent(),
                 this.emblemWaterGold.getCurrent(), this.emblemWaterSilver.getCurrent(),

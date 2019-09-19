@@ -7,7 +7,8 @@
 1. 將`out/artifacts/DLIOEstimate_jar`內的內容複製到自己知道的位置。
 2. 調整資料夾內`configs.properties`的參數。計算所需迎擊章可以使用[試算表](http://github.com/RaenonX/dragalia-data-track)輔助。
     - `sys.detail`: 顯示每次模擬跑完一場迎擊以後的背包最佳狀態。
-    - 參數代號解釋:
+    - `sys.coinonly`: 只計算幣，無視章。計算過程所吃的記憶體空間會少一點。
+    - 以下參數代號解釋:
         - `<SIZE>`: 有`gold`、`silver`、`bronze`分別代表金、銀、銅。
         - `<ITEM>`: 有`coin`、`emblem`分別代表幣、章。
         - `<ELEMENT>`: 有`fire`、`water`、`wind`、`light`、`dark`分別代表火、水、風、光、暗。

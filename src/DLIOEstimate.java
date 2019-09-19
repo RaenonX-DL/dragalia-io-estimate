@@ -1,11 +1,12 @@
-import Items.BackPack;
 import Items.BackPackBase;
+import Items.BackPackComplete;
+import Items.BackPackSimple;
 import Items.ItemProps;
 
 public class DLIOEstimate {
     public static void main(String[] args) {
         String propFilePath = "configs.properties";
-        if (args.length > 1) {
+        if (args.length > 0) {
             propFilePath = args[0];
         }
         if (!ItemProps.loadProperties(propFilePath)) {
@@ -13,7 +14,12 @@ public class DLIOEstimate {
             System.exit(1);
         }
 
-        BackPackBase finalPack = Finder.estimateFinal(new BackPack());
+        BackPackBase finalPack;
+        if (Boolean.parseBoolean(ItemProps.props.getProperty("sys.coinonly"))) {
+            finalPack = Finder.estimateFinal(new BackPackSimple());
+        } else {
+            finalPack = Finder.estimateFinal(new BackPackComplete());
+        }
         System.out.println("----------------------------------");
         if (finalPack != null) {
             System.out.println(String.format("*** Estimate %d games left***", finalPack.gamesToComplete(true)));

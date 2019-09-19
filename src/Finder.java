@@ -1,5 +1,6 @@
-import Items.BackPack;
+import Items.BackPackComplete;
 import Items.BackPackBase;
+import Items.BackPackSimple;
 import Items.ItemProps;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class Finder {
 
         while (gamesLeft > 0) {
             // Create a new backpack with initial state and simulate n games played.
-            pack = new BackPack();
+            pack = Boolean.parseBoolean(ItemProps.props.getProperty("sys.coinonly")) ? new BackPackSimple() : new BackPackComplete();
             pack.playGames(gamesPlayed + 1);
             gamesPlayed++;
 
@@ -66,7 +67,7 @@ public class Finder {
             BackPackBase current = frontier.poll();
 
             if (current.gamesToComplete() == 0) {
-                System.out.println("Solution found.");
+                System.out.println("Found complete combination.");
                 break;
             }
 
